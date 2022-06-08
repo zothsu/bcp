@@ -8,10 +8,13 @@
     <title>Brooklyn co-op preschool</title>
 
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,500,900' rel='stylesheet' type='text/css'>
-
+    <script src="https://kit.fontawesome.com/cae2f9e1a7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
     <link href="assets/css/styles.css" rel='stylesheet' type='text/css'>
 
+
 </head>
+
 <body>
 
 
@@ -29,35 +32,61 @@
         
     </section>
     -->
-<header>
-    <button class="toggle__btn">
-        <span class="toggle__bar"></span>
-    </button>
-    <nav class="nav"> <!--flex parent-->
-                <a class="nav__link" id="about" href="pages/about.html" >About</a>
-                <a class="nav__link" id="enrollment" href="pages/enrollment.html" >enrollment</a>
-                <a class="nav__link" id="members" href="pages/members.html">members</a>
-                <a class="nav__link" id="contact" href="pages/contact.html" target="_blank">contact</a>
-            
-            
-        </ul>
+    <header>
 
-</header>
+        <nav class="nav nav__slide">
+            <!--flex parent-->
+            <a class="nav__link" id="about" href="pages/about.html">About</a>
+            <a class="nav__link" id="enrollment" href="pages/enrollment.html">Enrollment</a>
+            <a class="nav__link" id="members" href="pages/members.html">Members</a>
+            <a class="nav__link" id="contact" href="pages/contact.html" target="_blank">Contact</a>
+        </nav>
 
+        <button class="toggle__btn">
+            <span class="toggle__bar"></span>
+        </button>
 
+        <img class="logo" src="assets/img/logo__md.svg" alt="brooklyn co-op preschool logo">
 
-
-<section id="hero">
-    <a href="http://brooklyncooppreschool.org/" class="logo"> 
-        <img src ="assets/img/logo__md.svg" alt="brooklyn co-op preschool logo">
-    </a>
-</section>
+    </header>
 
 
 
 
 
+    <!-- TEXT -->
+    <section>
+        <p class="section2 filler__text">Located in Southeast Portland, Oregon, Brooklyn Preschool was founded in 1971,
+            on the belief that children and parents benefit from a shared learning atmosphere. We foster community and a
+            shared responsibility for our children, while playing an active role in their preschool experience.</p>
+    </section>
 
+    <!-- IMG -->
+    <section>
+        <img class="section3 filler__img">
+    </section>
+
+
+
+
+
+
+    <!-- VIDEO -->
+    <section>
+        <!-- VIDEO-->
+        <figure>
+            <iframe loading="lazy" title="About Brooklyn Coop Preschool" width="840" height="473"
+                src="https://www.youtube.com/embed/eBXoy_vRIp0?feature=oembed" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+            <figcaption>
+                <p>Located in Southeast Portland, Oregon, Brooklyn Preschool was founded in 1971, on the belief that
+                    children and parents benefit from a shared learning atmosphere. We foster community and a shared
+                    responsibility for our children, while playing an active role in their preschool experience.</p>
+            </figcaption>
+        </figure>
+    </section>
 
 
 
@@ -67,8 +96,7 @@
         <div id="intro"></div>
 
         <!-- VIDEO-->
-        <figure
-            class="video">
+        <figure class="video">
             <iframe loading="lazy" title="About Brooklyn Coop Preschool" width="840" height="473"
                 src="https://www.youtube.com/embed/eBXoy_vRIp0?feature=oembed" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -214,16 +242,56 @@
             </div>
         </div>
     </div>
+
+
     <script src="assets/js/scripts.js"></script>
 </body>
 
+
+
+
 <!-- FOOTER SECTION -->
-<footer>
-    <p class="copyright"> Copyright &copy; 2022 &mdash; Brooklyn Co-op Preschool. All Rights Reserved </p>
+<footer class="footer">
+
+    <div class="footer__container flex1">
+        <p class="footer__title">About</p>
+        <p class="footer__text--justify">Brooklyn Cooperative Preschool is a 501(c)3 non-profit organization operating
+            under the umbrella of the Parent Child Preschool Organization (<a
+                href="https://www.parentchildpreschools.org/" target="_blank">PCPO</a>) of Oregon and Washington. .</p>
+    </div>
+
+    <div class="footer__container flex2">
+        <p class="footer__title">Quick Links</p>
+        <a class="footer__link" id="about" href="pages/about.html">About</a>
+        <a class="footer__link" id="enrollment" href="pages/enrollment.html">Enrollment</a>
+        <a class="footer__link" id="members" href="pages/members.html">Members</a>
+        <a class="footer__link" id="contact" href="pages/contact.html" target="_blank">Contact</a>
+    </div>
+
+    <div class="footer__container flex3">
+        <p class="footer__title">More Information</p>
+        <a class="footer__link" id="#" href="#">Fundraisers</a>
+        <a class="footer__link" id="#" href="#">Meet the teachers</a>
+        <a class="footer__link" id="#" href="#">Members</a>
+        <a class="footer__link" id="#" href="#" target="_blank">Calendar</a>
+    </div>
+
+    <div class="footer__container footer__container--copyright flex4">
+        <hr>
+        <p class="copyright-text">Copyright &copy; 2022 &mdash; Brooklyn Co-op Preschool. All Rights Reserved by <a
+                href="#">BCP</a>.
+        </p>
+    </div>
+
+    <div class="footer__icon flex5">
+        <a href="https://m.facebook.com/BrooklynCooperativePreschool/"><i class="fa-brands fa-facebook-square"></i></a>
+        <a href="#"><i class="fa-solid fa-envelope"></i></a>
+        <a href="#"><i class="fa-brands fa-paypal"></i></a>
+    </div>
+
 </footer>
 
 </html>
-
 
 
 

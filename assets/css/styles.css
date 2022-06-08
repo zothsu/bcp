@@ -29,6 +29,11 @@ article {
     line-height: 1.65;
 }
 
+section {
+    display: flex;
+    justify-content: center;
+    padding:1em;
+}
 
 /* ROOT VARIABLES */
 :root {
@@ -53,14 +58,7 @@ article {
 
 
 
-
-
-
-
 /* NAVBAR TOGGLE*/
-.logo {
-    width: 80% !important;
-}
 
 .toggle__btn {
     padding: 2em;
@@ -83,7 +81,7 @@ article {
 .toggle__bar::after {
     background: var(--clr-accent);
     width: 2.5em;
-    height: 3px;
+    height: .2em;
     border-radius: 1em;
     transition: transform 250ms ease-in-out;
 }
@@ -97,11 +95,11 @@ article {
 }
 
 .toggle__bar::before {
-    top: 7px;
+    top: .5em;
 }
 
 .toggle__bar::after {
-    bottom: 7px;
+    bottom: .5em;
 }
 
 /* NAV JS */
@@ -118,7 +116,7 @@ article {
 }
 
 .nav-open .toggle__bar::before {
-    transform: rotate(90deg) translateX(-7px);
+    transform: rotate(90deg) translateX(-0.5em);
 }
 
 .nav-open .toggle__bar::after {
@@ -142,17 +140,6 @@ article {
 
     transform: translateX(100%);
     transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
-}
-
-/* added to give toggle room with small screens */
-@media (max-width: 365px) {
-    .logo {
-        width: 75% !important;
-    }
-
-    .toggle__btn {
-        top: 1em;
-    }
 }
 
 
@@ -184,6 +171,55 @@ article {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+/* SECTION STYLING */
+
+.logo {
+    margin-top: 5em;
+    width: 70%;
+    flex-grow: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* FOOTER */
 
 .footer {
@@ -197,8 +233,6 @@ article {
     opacity: 0.5;
     max-width: 90%;
 }
-
-
 
 
 .footer__container {
@@ -225,7 +259,6 @@ article {
 }
 
 
-
 .footer a {
     color: var(--clr-footer-light);
     text-decoration: none;
@@ -235,8 +268,6 @@ article {
     color:var(--clr-accent);
     text-decoration: none;
 }
-
-
 
 
 @media (min-width: 800px) {
@@ -268,6 +299,5 @@ article {
     .flex4, 
     .flex5 {
         width: 100%;
-    }
-    
+    }   
 }

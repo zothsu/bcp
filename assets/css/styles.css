@@ -23,7 +23,9 @@ html {
 body {
     font-family: Roboto, sans-serif;
     font-display: swap;
+    z-index: 2;
 }
+
 article {
     max-inline-size: 66ch;
     line-height: 1.65;
@@ -62,11 +64,6 @@ article {
     width: 75% !important;
 }
 
-.toggle__mode {
-    color: var(--clr-footer-dark) !important;
-    position: relative;
-}
-
 .toggle__btn {
     padding: 1em;
     background: transparent;
@@ -75,6 +72,7 @@ article {
     position: absolute;
     right: .5em;
     z-index: 1000;
+    order: 3;
 }
 
 .toggle__bar {
@@ -211,6 +209,7 @@ article {
     padding: 1em;
     text-align: center;
 }
+
 .footer__icon {
     display: flex;
     flex-direction: row;
@@ -233,10 +232,10 @@ article {
 .footer a {
     color: var(--clr-footer-light);
     text-decoration: none;
-}    
+}
 
 .footer a:hover {
-    color:var(--clr-accent);
+    color: var(--clr-accent);
     text-decoration: none;
 }
 
@@ -259,9 +258,9 @@ article {
     .footer__link {
         text-align: left;
     }
-    
+
     .flex1 {
-        max-width:40%; 
+        max-width: 40%;
     }
 
     .flex2,
@@ -269,9 +268,213 @@ article {
         max-width: 25%;
     }
 
-    .flex4, 
+    .flex4,
     .flex5 {
         width: 100%;
     }
+
+}
+
+
+
+
+
+
+
+
+
+
+/* NEWS TICKER STYLES */
+
+.news-ticker__item {
+    visibility: hidden;
+    align-self: center;
+    order: 2;
+
+}
+
+.news-ticker__item--active {
+    visibility: visible;
+}
+
+.news-ticker a {
+    text-decoration: none;
+    color: var(--clr-accent);
     
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* outer-container styles */
+
+.outer-container {
+    background-color: rgb(0, 27, 58);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    transition: .5s;
+}
+
+.outer-container.light {
+    background-color: rgb(247, 247, 247);
+}
+.toggle__btn {
+    align-self: flex-end;
+}
+
+
+
+
+
+/* container "the whole button" styles */
+
+.container {
+    background: #484848;
+    width: 5em;
+    height: 2em;
+    border-radius: 2em;
+    display: flex;
+    align-items: center;
+    padding: 0.3em 0.5em;
+    cursor: pointer;
+    margin: .5em;
+    order: 1;
+}
+
+.light .container {
+    background: #25aee9;
+}
+
+/* sun and moon styles */
+
+.circle {
+    position: relative;
+    height: 100%;
+    width: 35%;
+    background: #fffdf2;
+    border-radius: 50%;
+    transition: all 0.3s;
+
+    border: 0.5em solid #dee1c5;
+
+    box-shadow: 2em 0em 0 -1em #e9e0d1a8, 3em 0.8em 0 -1em #e9e0d1a8,
+        3em 0em 0 -1.1em #e9e0d1a8, 2.5em -1em 0 -1.1em #e9e0d1a8,
+        4em 0 0 -1em #e9e0d1a8, 4.5em 1em 0 -1.1em #e9e0d1a8,
+        5em -0.8em 0em -1.1em #e9e0d1a8, 5.5em 0.5em 0 -1em #e9e0d1a8,
+        inset 8em -2.5em 0.7em -3.5em rgba(104, 58, 15, 0.144),
+        inset 0em 0em 0 -3em rgba(104, 58, 15, 0.041);
+}
+
+
+
+.light .circle {
+    background: #fbca00;
+    transform: translateX(190%);
+    box-shadow: none;
+    border: 0.2em solid #e4c74d;
+}
+
+
+/* the clouds styles
+
+.circle::before,
+.circle::after {
+    content: "";
+    position: absolute;
+    background: rgba(104, 58, 15, 0.144);
+    border-radius: 50%;
+}
+
+.circle::before {
+    top: 65%;
+    left: 60%;
+    height: 0.5em;
+    width: 0.5em;
+    border: 0.1em solid rgba(104, 58, 15, 0.041);
+}
+
+.circle::after {
+    top: 10%;
+    left: -30%;
+    height: 1em;
+    width: 1em;
+    border: 0.3em solid rgba(104, 58, 15, 0.041);
+}
+
+
+.light .circle::after,
+.light .circle::before {
+    display: none;
+}
+
+
+.light .cloud {
+    position: absolute;
+    top: 31%;
+    left: -4.5em;
+    display: block;
+    width: 8em;
+    height: 2em;
+    border: 0.4em solid #d4d4d2;
+    border-radius: 3em;
+    background-color: #fff;
+    animation: scaleItUp 0.5s;
+    z-index: -2;
+    transform: scale(0.35);
+    pointer-events: none;
+}
+
+.light .cloud::before,
+.light .cloud::after {
+    content: "";
+    display: block;
+    position: relative;
+    border: 0.4em solid #d4d4d2;
+    border-radius: 100%;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    background-color: #fff;
+}
+
+.light .cloud::before {
+    top: -2.3em;
+    right: 0em;
+    width: 4em;
+    height: 3.5em;
+
+    transform: rotateZ(20deg);
+}
+
+.light .cloud::after {
+    top: -6.7em;
+    right: -3em;
+    width: 3em;
+    height: 5em;
+
+    transform: rotateZ(83deg);
+    z-index: -1;
+}
+*/
+
+
+/* animations */
+@keyframes scaleItUp {
+    from {
+        transform: scale(0);
+    }
 }

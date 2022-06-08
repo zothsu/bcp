@@ -11,3 +11,18 @@ navLinks.forEach(link => {
     })
 })
 
+
+
+
+
+
+
+// added toggle code
+const outerContainer = document.querySelector(".outer-container");
+const container = document.querySelector(".container");
+
+
+container.addEventListener("click", () => {
+    outerContainer.classList.toggle("light");
+});
+

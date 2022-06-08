@@ -187,8 +187,8 @@ section {
 
 .logo {
     margin-top: 5em;
-    width: 70%;
     flex-grow: 1;
+    align-self: center;
 }
 
 

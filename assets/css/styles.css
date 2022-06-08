@@ -59,17 +59,21 @@ article {
 
 /* NAVBAR TOGGLE*/
 .logo {
-    width: 80% !important;
+    width: 75% !important;
+}
+
+.toggle__mode {
+    color: var(--clr-footer-dark) !important;
+    position: relative;
 }
 
 .toggle__btn {
-    padding: 2em;
+    padding: 1em;
     background: transparent;
     border: 0;
     cursor: pointer;
     position: absolute;
     right: .5em;
-    top: 2em;
     z-index: 1000;
 }
 

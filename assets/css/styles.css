@@ -1,0 +1,273 @@
+/* SETTINGS SITE-WIDE */
+
+@font-face {
+    font-family: Roboto;
+    src: url('/fonts/roboto-regular.woff2') format('woff2');
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: calc(0.75rem + 1.5vw);
+    line-height: 1.5;
+}
+
+
+
+body {
+    font-family: Roboto, sans-serif;
+    font-display: swap;
+}
+article {
+    max-inline-size: 66ch;
+    line-height: 1.65;
+}
+
+
+/* ROOT VARIABLES */
+:root {
+    --clr-light: #dfdfdf;
+    --clr-dark: #192119;
+    --clr-accent: #f37b20;
+    --clr-accent-r: #f34020;
+
+    --clr-footer-light: #737373;
+    --clr-footer-dark: #26272b;
+
+    --fw-reg: 300;
+    --fw-bold: 900;
+
+    --fs-nav: 2rem;
+
+    --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, .25),
+        0.125em 0.125em 0.25em rgba(0, 0, 0, .15);
+}
+
+
+
+
+
+
+
+
+
+/* NAVBAR TOGGLE*/
+.logo {
+    width: 80% !important;
+}
+
+.toggle__btn {
+    padding: 2em;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    position: absolute;
+    right: .5em;
+    top: 2em;
+    z-index: 1000;
+}
+
+.toggle__bar {
+    display: inline-block;
+    position: relative;
+}
+
+.toggle__bar,
+.toggle__bar::before,
+.toggle__bar::after {
+    background: var(--clr-accent);
+    width: 2.5em;
+    height: 3px;
+    border-radius: 1em;
+    transition: transform 250ms ease-in-out;
+}
+
+.toggle__bar::before,
+.toggle__bar::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.toggle__bar::before {
+    top: 7px;
+}
+
+.toggle__bar::after {
+    bottom: 7px;
+}
+
+/* NAV JS */
+.nav-open .nav {
+    transform: translateX(0);
+}
+
+.nav-open .toggle__btn {
+    position: fixed;
+}
+
+.nav-open .toggle__bar {
+    transform: rotate(.625turn);
+}
+
+.nav-open .toggle__bar::before {
+    transform: rotate(90deg) translateX(-7px);
+}
+
+.nav-open .toggle__bar::after {
+    opacity: 0;
+}
+
+.nav__slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    position: fixed;
+    background: var(--clr-dark);
+    color: var(--clr-light);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+
+    transform: translateX(100%);
+    transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
+}
+
+/* added to give toggle room with small screens */
+@media (max-width: 365px) {
+    .logo {
+        width: 75% !important;
+    }
+
+    .toggle__btn {
+        top: 1em;
+    }
+}
+
+
+
+/* NAVBAR MENU */
+
+.nav__link {
+    text-decoration: none;
+    font-size: var(--fs-nav);
+    color: var(--clr-accent);
+}
+
+
+
+/* NAVBAR DESKTOP
+@media (min-width: 800px) {
+    .nav {
+        visibility: visible;
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+    }
+}
+*/
+
+
+
+
+
+
+
+/* FOOTER */
+
+.footer {
+    background-color: var(--clr-footer-dark);
+    color: var(--clr-footer-light);
+    position: absolute;
+}
+
+.footer hr {
+    border-top-color: #bbb;
+    opacity: 0.5;
+    max-width: 90%;
+}
+
+
+
+
+.footer__container {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    text-align: center;
+}
+.footer__icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1em;
+    margin-bottom: 1em;
+}
+
+.footer__title {
+    color: var(--clr-light);
+}
+
+.footer__text--justify {
+    text-align: justify;
+    margin: 0;
+}
+
+
+
+.footer a {
+    color: var(--clr-footer-light);
+    text-decoration: none;
+}    
+
+.footer a:hover {
+    color:var(--clr-accent);
+    text-decoration: none;
+}
+
+
+
+
+@media (min-width: 800px) {
+    .nav__large {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .footer {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+
+    .footer__title,
+    .footer__link {
+        text-align: left;
+    }
+    
+    .flex1 {
+        max-width:40%; 
+    }
+
+    .flex2,
+    .flex3 {
+        max-width: 25%;
+    }
+
+    .flex4, 
+    .flex5 {
+        width: 100%;
+    }
+    
+}

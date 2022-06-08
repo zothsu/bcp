@@ -18,12 +18,15 @@ html {
     line-height: 1.5;
 }
 
-
-
 body {
     font-family: Roboto, sans-serif;
     font-display: swap;
 }
+
+header {
+    display: flex;;
+}
+
 article {
     max-inline-size: 66ch;
     line-height: 1.65;
@@ -31,7 +34,7 @@ article {
 
 section {
     display: flex;
-    justify-content: center;
+    justify-content: center space-around;
     padding:1em;
 }
 
@@ -180,19 +183,19 @@ section {
 
 
 
-
-
-
 /* SECTION STYLING */
 
 .logo {
-    margin-top: 5em;
+    margin-top: 6em;
     flex-grow: 1;
     align-self: center;
-    background-color: rgb(255, 0, 43);
+    width: 60%;
 }
 
-
+.space {
+    content: " ";
+    width: 10%;
+}
 
 
 

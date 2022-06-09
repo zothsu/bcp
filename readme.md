@@ -6,30 +6,39 @@ By _**Zoe T. Sullivan**_
 
 ## Description
 
-Brooklyn Preschool is a cooperative preschool located in Portland, OR. They are a 501(c)3 non-profit entity operating under the umbrella of the Parent Child Preschool Organization <https://www.parentchildpreschools.org/> of Oregon and Washington.</p>
+This is a private re-working of the website for [Brooklyn Cooperative Preschool](http://brooklyncooppreschool.org/). This is for educational purposes only.
 
-[GitHub Repository](https://www.github.com/bcp)
+Brooklyn Preschool is a cooperative preschool located in Portland, OR. They are a 501(c)3 non-profit entity operating under the umbrella of the Parent Child Preschool Organization <https://www.parentchildpreschools.org/> of Oregon and Washington.
 
-[GH Pages](https://zoe-moment.github.io/bcp/)
+GitHub Repository <https://www.github.com/zoe-moment/bcp>
+
+GH Pages <https://zoe-moment.github.io/bcp/>
 
 Business hosted website <http://brooklyncooppreschool.org/>
 
-## Immediate bugs to be fixed and tasks
+## Known Bugs
 
-- Toggle bar needs to be responsive
-- Logo needs to size according to toggle size
+- Add responsive properties to Toggle menu.
 - Nav bar needs to present on screens over 650px.
 - License information needs to be added to readme.md
 
-## Technologies/Resources Used
+## Features to add
+
+- Light/Dark mode toggle (BRANCH - NAV)
+- Add "News Ticker" between toggle and navigation menu.
+
+## Technologies/Applications used.
 
 - VS Code on Ubuntu 20.08
 - Inkscape SVG Editor
 - Polypane Browser <https://polypane.app/>
-- <https://css-tricks.com/snippets/css/a-guide-to-flexbox/>
-- <https://www.kevinpowell.co/newsletter>
-- <https://rwd.education/>
-- <https://fontawesome.com/>
+
+## Resources
+
+- Website - CSS Tricks <https://css-tricks.com/snippets/css/a-guide-to-flexbox/>
+- YouTube - Kevin Powell <https://www.kevinpowell.co/newsletter>
+- Book - Responsive Web Design <https://rwd.education/>
+- Icons - Font Awesome Library <https://fontawesome.com/>
 
 ### License
 

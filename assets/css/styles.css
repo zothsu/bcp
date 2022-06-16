@@ -29,17 +29,28 @@
         0.125em 0.125em 0.25em rgba(0, 0, 0, .15);
 }
 
+.logo {
+    background-image: url(assets/img/logo__md.svg);
+}
+
 /* ROOT -- MEDIA QUERIES */
 @media (prefers-color-scheme: light) {
     :root {
         --color-bg: #ffffff;
         --color-fg: #26272b;
     }
-    img {
-        
+    #logo {
+        background-image: url(assets/img/logo__md-light.svg);
     }
 }
 
+@media (prefers-color-scheme: dark) {
+    #logo {
+        background-image: url(assets/img/logo__md-dark.svg);
+        
+    }
+    
+}
 
 
 /* SITE-WIDE ELEMENT SETTINGS */

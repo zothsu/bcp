@@ -7,7 +7,9 @@
 
 
 
-/* ROOT VARIABLES */
+/* -----------------
+    ROOT VARIABLES 
+   ----------------- */
 :root {
     --color-bg: #26272b;
     --color-fg: #ffffff;
@@ -30,7 +32,11 @@
 }
 
 
-/* ROOT -- MEDIA QUERIES */
+
+/* -------------------------------
+    COLOR SCHEME -- MEDIA QUERIES 
+    ----------------------------- */
+    
 @media (prefers-color-scheme: light) {
     :root {
         --color-bg: #ffffff;
@@ -219,7 +225,7 @@ section {
 /* SECTION STYLING */
 
 .logo {
-    margin-top: 6em;
+    margin-top: 0em;
     flex-grow: 1;
     align-self: center;
     width: 60%;

@@ -368,3 +368,17 @@ section {
         visibility: visible;
     }
 }
+
+
+/* --------------------------
+page specific - hero
+--------------------------- */
+
+.hero {
+    height: 100vh;
+}
+
+.hero #logo-light,
+.hero #logo-dark {
+    width:90%;
+}

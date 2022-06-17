@@ -29,9 +29,6 @@
         0.125em 0.125em 0.25em rgba(0, 0, 0, .15);
 }
 
-.logo {
-    background-image: url(assets/img/logo__md.svg);
-}
 
 /* ROOT -- MEDIA QUERIES */
 @media (prefers-color-scheme: light) {
@@ -39,15 +36,22 @@
         --color-bg: #ffffff;
         --color-fg: #26272b;
     }
-    #logo {
-        background-image: url(assets/img/logo__md-light.svg);
+    #logo-light {
+        visibility: visible;
+        position: absolute;
+    }
+    #logo-dark {
+        visibility: hidden;
     }
 }
 
 @media (prefers-color-scheme: dark) {
-    #logo {
-        background-image: url(assets/img/logo__md-dark.svg);
-        
+    #logo-dark {
+        visibility: visible;
+        position: absolute;
+    }
+    #logo-light {
+        visibility: hidden;
     }
     
 }

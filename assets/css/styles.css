@@ -185,7 +185,6 @@ section {
 }
 
 
-
 /* NAVBAR MENU */
 
 .nav__link {
@@ -196,16 +195,31 @@ section {
 
 
 
-/* NAVBAR DESKTOP
+/* ------------- 
+NAVBAR DESKTOP 
+---------------*/
 @media (min-width: 800px) {
-    .nav {
-        visibility: visible;
+    
+    .toggle__btn,
+    .toggle__bar {
+        visibility: hidden;
+    }
+
+    .nav__row {
+        visibility: visible ;
         display: flex;
         flex-direction: row;
         gap: 1em;
     }
+    .nav__link a {
+        visibility: visible;
+        color: var(--clr-accent);
+        text-decoration: underline;
+
+    }
+    
 }
-*/
+
 
 
 

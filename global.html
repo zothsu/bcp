@@ -21,108 +21,43 @@
 
 
     <!-- NEWS TICKER
-    
+    <section class="news-ticker">
+        <span class="news-ticker__pre">Latest –&nbsp;</span>
+        
+            <a class="news-ticker__item news-ticker__item--active" href="./enrollment.html">Spots still available for 2022-2023 school year!</a>
+        
+            <a class="news-ticker__item" href="http://brooklyncooppreschool.org/covid-19/">Covid precautions and resources</a>
+        
+            <a class="news-ticker__item" href="https://www.surfrider.org/coastal-blog/entry/surfrider-resumes-lawsuit-against-us-steel"> Resumes Lawsuit Against U.S. Steel</a>
+        
+    </section>
     -->
     <header>
 
+        <nav class="nav nav__slide">
+            <!--flex parent-->
+            <a class="nav__link" id="about" href="pages/about.html">About</a>
+            <a class="nav__link" id="enrollment" href="pages/enrollment.html">Enrollment</a>
+            <a class="nav__link" id="members" href="pages/members.html">Members</a>
+            <a class="nav__link" id="contact" href="pages/contact.html" target="_blank">Contact</a>
+        </nav>
 
-
-        <!-- NAV BAR CONTAINER -->
-        <div class="outer-container">
-
-            <!-- THEME TOGGLE (LEFT) -->
-            <div class="container">
-                <div class="circle">
-                    <div class="cloud"></div>
-                </div>
-            </div>
-
-
-            <!-- NEWS TICKER (CENTER)-->
-            <section class="news-ticker">
-                <!-- <span class="news-ticker__pre">Latest –&nbsp;</span> -->
-
-                <a class="news-ticker__item news-ticker__item--active" href="./enrollment.html">Spots still available
-                    for 2022-2023 school year!</a>
-
-                <a class="news-ticker__item" href="http://brooklyncooppreschool.org/covid-19/">Covid precautions and
-                    resources</a>
-
-                <a class="news-ticker__item"
-                    href="https://www.surfrider.org/coastal-blog/entry/surfrider-resumes-lawsuit-against-us-steel">Surfrider
-                    Resumes Lawsuit Against U.S. Steel</a>
-            </section>
-
-
-            <!-- HAMBURGER TOGGLE (RIGHT) -->
-            <button class="toggle__btn">
-                <span class="toggle__bar"></span>
-            </button>
-
-
-            <!-- XX - NAVIGATION SLIDE -->
-            <nav class="nav nav__slide">
-                <!--flex parent-->
-                <a class="nav__link" id="about" href="pages/about.html">About</a>
-                <a class="nav__link" id="enrollment" href="pages/enrollment.html">Enrollment</a>
-                <a class="nav__link" id="members" href="pages/members.html">Members</a>
-                <a class="nav__link" id="contact" href="pages/contact.html" target="_blank">Contact</a>
-            </nav>
-
-
-
-        </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <img class="logo" src="assets/img/logo__md.svg" alt="brooklyn co-op preschool logo">
+        <button class="toggle__btn">
+            <span class="toggle__bar"></span>
+        </button>
 
     </header>
 
 
+    <section>
+        <div class="space"><span></span> </div> <!-- placed for flexbox and sizing-->
+        <svg>
+            <img class="logo" id="logo-light" src="assets/img/logo__md-light.svg">
+            <img class="logo" id="logo-dark" src="assets/img/logo__md-dark.svg">
+        </svg>
 
+        <div class="space"><span></span> </div> <!-- placed for flexbox and sizing-->
+    </section>
 
 
     <!-- TEXT -->
@@ -131,14 +66,6 @@
             on the belief that children and parents benefit from a shared learning atmosphere. We foster community and a
             shared responsibility for our children, while playing an active role in their preschool experience.</p>
     </section>
-
-    <!-- IMG -->
-    <section>
-        <img class="section3 filler__img">
-    </section>
-
-
-
 
 
 
@@ -170,41 +97,46 @@
 <!-- FOOTER SECTION -->
 <footer class="footer">
 
-    <div class="footer__container flex1">
+    <div class="footer__container footer__flex1">
         <p class="footer__title">About</p>
         <p class="footer__text--justify">Brooklyn Cooperative Preschool is a 501(c)3 non-profit organization operating
             under the umbrella of the Parent Child Preschool Organization (<a
                 href="https://www.parentchildpreschools.org/" target="_blank">PCPO</a>) of Oregon and Washington. .</p>
     </div>
 
-    <div class="footer__container flex2">
+    <div class="footer__container footer__flex2">
         <p class="footer__title">Quick Links</p>
         <a class="footer__link" id="about" href="pages/about.html">About</a>
         <a class="footer__link" id="enrollment" href="pages/enrollment.html">Enrollment</a>
-        <a class="footer__link" id="members" href="pages/members.html">Members</a>
-        <a class="footer__link" id="contact" href="pages/contact.html" target="_blank">Contact</a>
+        <a class="footer__link" id="calendar" href="#" target="_blank">Calendar</a>
     </div>
 
-    <div class="footer__container flex3">
+
+
+    <div class="footer__container footer__flex3">
         <p class="footer__title">More Information</p>
         <a class="footer__link" id="#" href="#">Fundraisers</a>
         <a class="footer__link" id="#" href="#">Meet the teachers</a>
-        <a class="footer__link" id="#" href="#">Members</a>
-        <a class="footer__link" id="#" href="#" target="_blank">Calendar</a>
+        <a class="footer__link" id="#" href="#">Members Portal</a>
     </div>
 
-    <div class="footer__container footer__container--copyright flex4">
-        <hr>
+    <div class="footer__container footer__container--copyright footer__flex4">
+        <address>
+            <a href="tel:+5032347103">503-234-7103 <span class="lg-only">|</span></a>
+            <a href="mailto:membership@brooklyncooppreschool.org">membership@brooklyncooppreschool.org</a>
+
+        </address>
+
         <p class="copyright-text">Copyright &copy; 2022 &mdash; Brooklyn Co-op Preschool. All Rights Reserved by <a
                 href="#">BCP</a>.
         </p>
     </div>
 
-    <div class="footer__icon flex5">
+
+    <div class="footer__icon footer__flex5">
         <a href="https://m.facebook.com/BrooklynCooperativePreschool/"><i class="fa-brands fa-facebook-square"></i></a>
         <a href="#"><i class="fa-solid fa-envelope"></i></a>
         <a href="#"><i class="fa-brands fa-paypal"></i></a>
-        <a href="#"><i class="fa-solid fa-calendar-days"></i></a>
     </div>
 
 </footer>

@@ -20,7 +20,7 @@ Business hosted website <http://brooklyncooppreschool.org/>
 
 - Add responsive properties to Toggle menu.
 - Nav bar needs to present on screens over 650px.
-- License information needs to be added to readme.md
+- License information for Education content needs to be added to readme.md
 
 ## Features to add
 
@@ -42,4 +42,5 @@ Business hosted website <http://brooklyncooppreschool.org/>
 
 ### License
 
+Add educational licensing information
 Copyright (c) 2022 **Zoe T. Sullivan**
